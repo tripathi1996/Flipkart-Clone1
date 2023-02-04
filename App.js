@@ -9,10 +9,10 @@ import { Box } from '@mui/system';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-    return ( <
-        div className = "App" >
+    return (
+
         <
-        Header / >
+        div className = "App" >
         <
         BrowserRouter >
 
@@ -24,16 +24,20 @@ function App() {
         <
         Route exact path = '/'
         element = { < Home / > }
-        /> <
-        Route path = '/productpage/:id'
+        /> 
+
+        <
+        Route path = '/product/:id'
         element = { < DetailView / > }
         /> <
-        /Routes> <
-        /Box> <
-        /BrowserRouter>
+        /Routes>  <
+        /Box >  <
+        /BrowserRouter> <
+        Header / >
 
         <
         /div>
+
     );
 }
 
